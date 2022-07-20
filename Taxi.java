@@ -6,6 +6,7 @@ public class Taxi extends Public_Transport{
     int dis_fare;
 
     int cur_passenger;
+    int money;
 
     public Taxi(){
         super();
@@ -17,6 +18,7 @@ public class Taxi extends Public_Transport{
         state="일반";
         speed=0;
         cur_passenger = 0;
+        money = 0;
     }
 
 
@@ -61,7 +63,8 @@ public class Taxi extends Public_Transport{
 
     public int pay(){
         cur_passenger = 0;
-        return now_fare();
+        money += now_fare();
+        return money;
     }
 
     public void set_destination(String des, int dis){

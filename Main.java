@@ -78,7 +78,6 @@ public class Main {
         System.out.println();
 
         taxi1.set_fuel(-20);
-        taxi1.pay();
         System.out.println("a. 주유량 = "+ taxi1.fuel);
         System.out.println("b. 상태 = "+ taxi1.state);
         System.out.println("c. 누적 요금 = "+taxi1.pay());
